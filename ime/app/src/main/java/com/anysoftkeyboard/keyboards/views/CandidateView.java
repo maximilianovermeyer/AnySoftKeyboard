@@ -497,7 +497,7 @@ public class CandidateView extends View implements ThemeableChild {
                 if (!mScrolled && mSelectedString != null) {
                     if (mShowingAddToDictionary) {
                         final CharSequence word = mSuggestions.get(0);
-                        if (word.length() >= 2 && !mNoticing) {
+                        if (!mNoticing) {
                             Logger.d(
                                     TAG,
                                     "User wants to add the word '%s' to the user-dictionary.",
